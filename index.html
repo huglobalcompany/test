@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기본 HTML 페이지</title>
+    <title>Vercel 환경변수 예제</title>
+    <!-- 1. 빌드 시 생성될 환경변수 파일을 로드합니다. -->
+    <script src="/env.js"></script>
 </head>
 <body>
-    <h1>안녕하세요!</h1>
-    <p>이것은 예시 HTML 파일입니다.</p>
-    <p>2025년 7월 19일 15:00:00</p>
+    <h1>Vercel에서 온 메시지:</h1>
+    <p id="greeting-message" style="font-size: 1.2em; color: #333;">로딩 중...</p>
+
+    <script>
+        // 2. window 객체에 저장된 값을 사용합니다.
+        // inject-env.js에서 window.MY_APP_CONFIG.GREETING 으로 값을 설정했습니다.
+        const message = window.MY_APP_CONFIG.GREETING;
+        
+        const messageElement = document.getElementById('greeting-message');
+        
+        if (message) {
+            messageElement.textContent = message;
+        } else {
+            messageElement.textContent = '환경변수가 설정되지 않았습니다.';
+        }
+    </script>
 </body>
 </html>

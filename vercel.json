@@ -1,7 +1,8 @@
 {
     "env": {
         "NEXT_PUBLIC_VARIABLE": "this-is-a-public-variable",
-        "ANOTHER_VARIABLE": "non-secret-value"
+        "ANOTHER_VARIABLE": "non-secret-value",
+        "Name": "PUBLIC_GREETING_MESSAGE",
+        "Value": "안녕하세요! Vercel 환경변수에서 가져온 메시지입니다"
    }
-
 }

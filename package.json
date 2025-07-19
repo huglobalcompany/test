@@ -1,0 +1,11 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A simple static site with environment variables.",
+  "main": "index.html",
+  "scripts": {
+    "build": "node ./inject-env.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
