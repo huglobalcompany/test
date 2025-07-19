@@ -1,0 +1,8 @@
+{
+    "env": {
+        "NEXT_PUBLIC_VARIABLE": "this-is-a-public-variable",
+        "API_KEY": "@my-secret-api-key",
+        "ANOTHER_VARIABLE": "non-secret-value"
+   }
+
+}
